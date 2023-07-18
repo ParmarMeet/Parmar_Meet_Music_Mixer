@@ -1,7 +1,70 @@
-.hidden {
-    display: none;
+body {
+  background-image: url("../images/tri hexagon.svg"), url("../images/white bg.png");
+  background-size: 100%;
+  background-color: rgb(253, 247, 247);
+  position: sticky;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  max-width: 100%;
+  background-position-y: 200px;
 }
 
-img {
-    width: 300px;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+/* Other CSS rules... */
+
+header {
+  position: fixed;
+  max-width: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 22px 6%;
+}
+
+.box-menu {
+  font-size: 1.8rem;
+  font-weight: 700;
+  box-sizing: border-box;
+  box-shadow: inset black;
+  color: grey;
+  text-decoration: none;
+}
+
+#Instruction1 {
+  color: black;
+  transform: translate(350px, -2010px);
+  font-size: x-large;
+}
+
+.DragDropBox {
+  display: block;
+  margin-top: 100px;
+  margin-left: 250px;
+}
+
+#Box {
+  margin-left: 232px;
+  margin-top: -2285px;
+}
+
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5,
+#icon6 {
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+}
+
+/* Other CSS rules... */
