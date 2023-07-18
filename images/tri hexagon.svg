@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4087" height="3427" viewBox="0 0 4087 3427">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="4087" height="3427"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="4087" height="3427" fill="#fff"/>
+    <path id="Polygon_1" data-name="Polygon 1" d="M454,0,908,815H0Z" transform="translate(1551)" fill="#fed403"/>
+    <path id="Polygon_2" data-name="Polygon 2" d="M454,0,908,815H0Z" transform="translate(2459 3327) rotate(180)" fill="#fed403"/>
+    <path id="Polygon_3" data-name="Polygon 3" d="M454,0,908,815H0Z" transform="translate(2522.794 1680.404)" fill="#fed403"/>
+    <path id="Polygon_4" data-name="Polygon 4" d="M454,0,908,815H0Z" transform="translate(372.456 1258.771) rotate(-60)" fill="#fed403"/>
+    <path id="Polygon_5" data-name="Polygon 5" d="M454,0,908,815H0Z" transform="translate(3225.877 440.42) rotate(60)" fill="#fed403"/>
+    <path id="Polygon_6" data-name="Polygon 6" d="M454,0,908,815H0Z" transform="translate(624.266 1679.5)" fill="#fed403"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(1489 1186)" stroke="#707070" stroke-width="10">
+      <rect width="1094" height="987" stroke="none"/>
+      <rect x="5" y="5" width="1084" height="977" fill="none"/>
+    </g>
+  </g>
+</svg>
