@@ -11,6 +11,7 @@ const romantic = document.querySelector('#icon2');
 const boxes = document.querySelectorAll(".DragDropBox");
 const Box = document.querySelector('#Box');
 
+
 // Define the sound effects to be played
 const aevatanpatriotic = new Audio("assets/aevatanpatriotic.mp3");
 const badtameezdildancepop = new Audio("assets/badtameezdildancepop.mp3");
@@ -23,7 +24,9 @@ const tumsehiromanticballad = new Audio("assets/tumsehiromanticballad.mp3");
 icons.forEach(icon => {
   // When the drag starts, store the ID of the dragged icon
   icon.addEventListener("dragstart", event => {
+    //debugger;
     event.dataTransfer.setData("target", event.target.id);
+
   });
 });
 
@@ -40,7 +43,7 @@ boxes.forEach(box => {
 
     // Get the ID of the dropped icon
     const iconId = event.dataTransfer.getData("target");
-
+    debugger;
     // Play the sound effect based on the element that was dropped on
     if (patrioti.id === iconId) {
       aevatanpatriotic.play();
@@ -54,8 +57,8 @@ boxes.forEach(box => {
       khwajamerekhwaja.play();
     } else if (romantic.id === iconId) {
       tumsehiromanticballad.play();
-    }
+}
 
-    console.log(`Icon ${iconId} dropped on ${Box.alt}`);
+    console.log(`Icon ${iconId} dropped on ${Box.innerText}`);
   });
 });
