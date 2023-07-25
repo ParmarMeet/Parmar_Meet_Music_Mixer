@@ -1,70 +1,181 @@
-body {
-  background-image: url("../images/tri hexagon.svg"), url("../images/white bg.png");
-  background-size: 100%;
-  background-color: rgb(253, 247, 247);
-  position: sticky;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  max-width: 100%;
-  background-position-y: 200px;
+/* Reset some default styles to ensure consistency */
+body, h1, h2, p, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url('images/dancing.png;');
 }
 
+/* Define basic styles for the container */
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-/* Other CSS rules... */
-
-header {
-  position: fixed;
-  max-width: 100%;
-  right: 0;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+/* Style the first row with dropbox */
+.row.dropbox-row {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  padding: 22px 6%;
+  margin-bottom: 20px;
+/*  background-color: #f0f0f0;*/
+  border: 2px dotted #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
-
-.box-menu {
-  font-size: 1.8rem;
-  font-weight: 700;
-  box-sizing: border-box;
-  box-shadow: inset black;
-  color: grey;
-  text-decoration: none;
-}
-
-#Instruction1 {
-  color: black;
-  transform: translate(350px, -2010px);
-  font-size: x-large;
-}
-
+.row p {
+      padding: 10px; /* Add padding to the paragraph */
+      color: #333; /* Change the text color to dark grey (#333) */
+      font-size: 18px; /* Adjust the font size as needed */
+    }
+    
+    /* Custom CSS for the draggable images */
+    .draggable-image 
 .DragDropBox {
+  margin-right: 20px;
+  height: 100%;
+  width: 200px;
+}
+.dropbox-row {
+          background: linear-gradient(to right, #8bccbd, #6cdaa5);
+
+      padding: 20px; /* Add padding to the dropbox row */
+    }
+/* Create a 6-column grid for the second row */
+.row.image-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+
+}
+ .draggable-image {
+      background-color: #f0f0f0;
+      border-radius: 100%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .draggable-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+.image-col{
+background-color: #f0f0f0; /* Light background color */
+      border-radius: 100%; /* Set 100% border radius for rounded shape */
+      padding: 10px; /* Add padding to the images */
+    }
+/* Style the images within the columns */
+.row.image-row .col {
+  position: relative;
+}
+
+.row.image-row .col img {
   display: block;
-  margin-top: 100px;
-  margin-left: 250px;
+  width: 70%;
+  height: auto;
 }
 
-#Box {
-  margin-left: 232px;
-  margin-top: -2285px;
+/* Style the header */
+.main-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
 }
 
+.main-header h2 {
+  font-size: 24px;
+}
+
+.main-header h2 span {
+  color: #51d389;
+}
+
+/* Additional styling for the box-menu */
+.box-menu {
+  background-color: #3d3dce;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.box-menu h2 {
+  font-size: 32px;
+}
+
+/* Optional styles for the h-button (adjust as needed) */
+.h-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.row p {
+      padding: 10px; /* Add padding to the paragraph */
+      color: #333; /* Change the text color to dark grey (#333) */
+      font-size: 18px; /* Adjust the font size as needed */
+    }
+
+.h-button:hover {
+  cursor: pointer;
+  background-color: #0056b3;
+}
+
+/* Additional styling for the instruction paragraph */
+#Instruction1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.dropbox-row {
+/*      background-color: #e6e6e6; /* Light grey background color */*/
+ /*      padding: 20px; /* Add padding to the dropbox row */*/
+/* Optional styles for individual icons (adjust as needed) */
 #icon1,
 #icon2,
 #icon3,
 #icon4,
 #icon5,
 #icon6 {
-  cursor: pointer;
-  width: 200px;
-  display: flex;
+
+    padding: 22px;
+}
+ #icon1-col .draggable-image {
+      background-color: #ffcccb; /* Light coral */
+    }
+
+    #icon2-col .draggable-image {
+      background-color: #ffc0cb; /* Pink */
+    }
+
+    #icon3-col .draggable-image {
+      background-color: #add8e6; /* Light blue */
+    }
+
+    #icon4-col .draggable-image {
+      background-color: #8fdf99; /* Pale green */
+    }
+
+    #icon5-col .draggable-image {
+      background-color: #dda0dd; /* Plum */
+    }
+
+    #icon6-col .draggable-image {
+      background-color: #f0e68c; /* Khaki */
+    }
+/* Styles for draggable images */
+.draggable-image {
+  position: absolute;
+width: 100px;
+    height: 100px;
+  cursor: grab;
 }
 
-/* Other CSS rules... */
+/* Optional styles for the active draggable image */
+#icon1-col .draggable-image {
+  background-color: #ffcccb; /* Light coral */
+}
+}

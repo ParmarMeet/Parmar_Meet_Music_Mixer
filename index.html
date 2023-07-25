@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Interactive Music Mixer</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="box box-menu" id="menu-con">
-        <h2>MUS<span>IC MIXER</span></h2>
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Music Mixer</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="box box-menu" id="menu-con">
+      <h2>MUS<span>IC MIXER</span></h2>
+    </div>
+    <div class="h-button">
+    </div>
+  </header>
+  <div class="row">
+    <div class="container">
+      <!-- New Row with Sample Paragraph -->
+      <div class="row">
+        <p>Have you ever wanted to have some fun with the diverse genres of the Indian Music Industry? You can explore the vibrant sounds of Bollywood, immerse yourself in the rhythmic beats of Bhangra, get lost in the soulful melodies of Sufi music, and so much more. The genres which I have used are:</p>
+        <ul>
+          <li>Sufi</li>
+          <li>Romantic</li>
+          <li>Patriotic</li>
+          <li>Bollywood</li>
+          <li>Religious</li>
+          <li>Sad</li>
+        </ul>
+        <p>With a simple drag and drop interface, you can mix and match different elements from various genres, creating your own musical compositions and witnessing the magic that happens when these genres blend together. It's a truly exciting and fun way to delve into the rich and diverse world of Indian music. So, why not give it a try and let your creativity soar with the endless possibilities this project has to offer!</p>
       </div>
-      <div class="h-button"></div>
-    </header>
-    <main>
-      <div class="container">
-        <p id="Instruction1">Drop sounds in me!</p>
-        <img class="DragDropBox" src="images/Box.png" alt="Box" id="Box" height="300" width="400" />
-        <img src="images/patrioti.png" alt="patrioti" id="icon3" />
-        <img src="images/dancing.png" alt="dancing" id="icon4" />
-        <img src="images/swastika.png" alt="swastika" id="icon5" />
-        <img src="images/sad.png" alt="sad" id="icon6" />
-        <img src="images/sufi.png" alt="sufi" id="icon1" />
-        <img src="images/romantic.png" alt="romantic" id="icon2" />
+
+      <!-- First Row with DropBox -->
+      <div class="row dropbox-row">
+       
+        <img class="DragDropBox" src="images/soundtrack.png" alt="Box" id="Box" height="300" width="400">
+ <p id="Instruction1">Drop sounds on image...</p>
       </div>
-    </main>
-    <script src="js/main.js"></script>
-  </body>
+
+      <!-- Second Row with Six Columns and Images -->
+      <div class="row image-row">
+        <div class="col" id="icon1-col">
+          <div class="draggable-image">
+            <img src="images/sufi.png" alt="sufi" id="icon1" />
+          </div>
+        </div>
+        <div class="col" id="icon2-col">
+          <div class="draggable-image">
+            <img src="images/romantic.png" alt="romantic" id="icon2" />
+          </div>
+        </div>
+        <div class="col" id="icon3-col">
+          <div class="draggable-image">
+            <img src="images/patrioti.png" alt="patrioti" id="icon3" />
+          </div>
+        </div>
+        <div class="col" id="icon4-col">
+          <div class="draggable-image">
+            <img src="images/dancing.png" alt="dancing" id="icon4" />
+          </div>
+        </div>
+        <div class="col" id="icon5-col">
+          <div class="draggable-image">
+            <img src="images/swastika.png" alt="swastika" id="icon5" />
+          </div>
+        </div>
+        <div class="col" id="icon6-col">
+          <div class="draggable-image">
+            <img src="images/sad.png" alt="sad" id="icon6" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
 </html>
